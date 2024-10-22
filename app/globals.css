@@ -9,8 +9,8 @@
 
 @media (prefers-color-scheme: dark) {
   :root {
-    --background: #0a0a0a;
-    --foreground: #ededed;
+    --background: #ffffff;
+    --foreground: #000;
   }
 }
 
@@ -24,4 +24,9 @@ body {
   .text-balance {
     text-wrap: balance;
   }
+}
+
+.bg-a-50 {
+  --tw-bg-opacity: 0.5;
+  background-color: rgb(243 244 246 / var(--tw-bg-opacity)) /* #f9fafb */;
 }
