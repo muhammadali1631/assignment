@@ -9,7 +9,7 @@ import { FaArrowRightLong } from "react-icons/fa6";
 
 const Project = () => {
   return (
-    <div className='px-20 relative'>
+    <div className='px-10 md:px-20 relative'>
         <h1 className='text-[#BDBDBD] text-5xl mb-10'>Our Projects</h1>
         
             <div className='grid gap-5 justify-around'>
