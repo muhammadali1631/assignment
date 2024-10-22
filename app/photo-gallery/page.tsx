@@ -10,7 +10,7 @@ import img8 from '@/images/Rectangle 29.png'
 import img9 from '@/images/Rectangle 30.png'
 import img10 from '@/images/Rectangle 31.png'
 import Image from 'next/image'
-let images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, ]
+const images = [img1, img2, img3, img4, img5, img6, img7, img8, img9, img10, ]
 
 const page = () => {
   return (
