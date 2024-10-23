@@ -1,5 +1,4 @@
 import React from 'react'
-import { LiaSlashSolid } from "react-icons/lia";
 
 import img1 from '@/images/Rectangle 22.png'
 import img2 from '@/images/Rectangle 23.png'
