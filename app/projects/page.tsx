@@ -4,6 +4,7 @@ import img1 from '@/images/image 30.png'
 import img2 from '@/images/image 33.png'
 import img3 from '@/images/image 32.png'
 import { FaArrowRightLong } from 'react-icons/fa6'
+import CountArrow from '@/components/CountArrow'
 const page = () => {
   return (
     <div>
@@ -35,6 +36,9 @@ const page = () => {
                     <button className='py-4 px-7 bg-white flex items-center gap-3'>VIEW MORE <FaArrowRightLong/></button>
                 </div>
             </div>
+        </div>
+        <div className=''>
+        <CountArrow/>
         </div>
     </div>
   )
