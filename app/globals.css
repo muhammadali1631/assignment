@@ -30,3 +30,7 @@ body {
   --tw-bg-opacity: 0.5;
   background-color: rgb(243 244 246 / var(--tw-bg-opacity)) /* #f9fafb */;
 }
+
+.shad{
+  box-shadow: rgba(0, 0, 0, 0.24) 0px 3px 8px;
+}

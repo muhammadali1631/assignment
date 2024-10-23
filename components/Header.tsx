@@ -12,7 +12,7 @@ const Header = () => {
             <ul className='hidden md:flex gap-7 '>
                 <Link href={"/"} className='border-y-[1px] border-black px-3 '> <li>MAIN</li> </Link>
                 <Link href={"/photo-gallery"} className='px-3'> <li>GALLERY</li> </Link>
-                <Link href={"/"} className='px-3'> <li>PROJECTS</li> </Link>
+                <Link href={"/projects"} className='px-3'> <li>PROJECTS</li> </Link>
                 <Link href={"/"} className='px-3'> <li>CERTIFICATIONS</li> </Link>
                 <Link href={"/"} className='px-3'> <li>CONTACT</li> </Link>
             </ul>
