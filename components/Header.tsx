@@ -1,24 +1,47 @@
+'use client'
 import Image from 'next/image'
-import React from 'react'
+import React, { useState } from 'react'
 import logo from '@/images/logo.svg'
 import Link from 'next/link'
 import { IoMenu } from "react-icons/io5";
+import { RxCross2 } from "react-icons/rx";
+
 
 const Header = () => {
+  const [attr, setAttr] = useState('hidden')
+  const [attr2, setAttr2] = useState('block')
+  const [isOpen, setIsOpen] = useState(false)
+  const openMenu = () =>{
+    setIsOpen(!isOpen)
+    setAttr(isOpen ? 'hidden': 'block')
+    setAttr2(isOpen ? 'block': 'hidden')
+  }
   return (
-    <div className='flex justify-between items-center py-5 px-12 mb-10'>
+    <header className='mb-10'>
+    <div className='flex justify-between items-center py-5 px-6 sm:px-12'>
             <Image src={logo} alt='logo' height={0} width={0} className='w-[70px] object-contain'/>
         <nav>
             <ul className='hidden md:flex gap-7 '>
                 <Link href={"/"} className='border-y-[1px] border-black px-3 '> <li>MAIN</li> </Link>
                 <Link href={"/photo-gallery"} className='px-3'> <li>GALLERY</li> </Link>
                 <Link href={"/projects"} className='px-3'> <li>PROJECTS</li> </Link>
-                <Link href={"/"} className='px-3'> <li>CERTIFICATIONS</li> </Link>
-                <Link href={"/"} className='px-3'> <li>CONTACT</li> </Link>
+                <Link href={"/certifications"} className='px-3'> <li>CERTIFICATIONS</li> </Link>
+                <Link href={"/contact"} className='px-3'> <li>CONTACT</li> </Link>
             </ul>
-            <IoMenu className='block md:hidden text-3xl'/>
+            <IoMenu onClick={openMenu} className={`${attr2} md:hidden text-3xl`}/>
+            <RxCross2 onClick={openMenu} className={`${attr} text-3xl`}/>
         </nav>
     </div>
+    <div className={`${attr} md:hidden`}>
+      <ul className='grid justify-center text-center gap-4'>
+        <Link href={"/"} className=''> <li>MAIN</li> </Link>
+        <Link href={"/photo-gallery"} className=''> <li>GALLERY</li> </Link>
+        <Link href={"/projects"} className=''> <li>PROJECTS</li> </Link>
+        <Link href={"/certifications"} className=''> <li>CERTIFICATIONS</li> </Link>
+        <Link href={"/contact"} className=''> <li>CONTACT</li> </Link>
+      </ul>
+    </div>
+    </header>
   )
 }
 

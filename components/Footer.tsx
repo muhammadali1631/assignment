@@ -22,10 +22,10 @@ const Footer = () => {
             <h3 className='font-semibold mb-5'>Information</h3>
             <ul className='flex flex-col gap-3'>
                 <Link href={"/"}> <li>Main</li> </Link>
-                <Link href={"/"}> <li>Gallery</li> </Link>
-                <Link href={"/"}> <li>Projects</li> </Link>
-                <Link href={"/"}> <li>Certifications</li> </Link>
-                <Link href={"/"}> <li>Contacts</li> </Link>
+                <Link href={"/photo-gallery"}> <li>Gallery</li> </Link>
+                <Link href={"/projects"}> <li>Projects</li> </Link>
+                <Link href={"/certifications"}> <li>Certifications</li> </Link>
+                <Link href={"/contact"}> <li>Contacts</li> </Link>
             </ul>
         </div>
         <div className='flex flex-col gap-3'>
