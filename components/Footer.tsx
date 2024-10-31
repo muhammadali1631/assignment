@@ -16,7 +16,9 @@ const Footer = () => {
   return (
     <div className='bg-[#2C2C2C] text-white mt-24 p-10 flex justify-around flex-wrap gap-10'>
         <div>
+            <Link href={'/'}>
             <Image src={logo} alt=''/>
+            </Link>
         </div>
         <div>
             <h3 className='font-semibold mb-5'>Information</h3>

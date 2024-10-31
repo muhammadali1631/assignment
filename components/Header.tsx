@@ -19,7 +19,9 @@ const Header = () => {
   return (
     <header className='mb-10'>
     <div className='flex justify-between items-center py-5 px-6 sm:px-12'>
+            <Link href={'/'}>
             <Image src={logo} alt='logo' height={0} width={0} className='w-[70px] object-contain'/>
+            </Link>
         <nav>
             <ul className='hidden md:flex gap-7 '>
                 <Link href={"/"} className='border-y-[1px] border-black px-3 '> <li>MAIN</li> </Link>

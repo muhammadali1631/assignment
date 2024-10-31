@@ -6,6 +6,7 @@ import project3 from '@/images/image 16.png'
 import project4 from '@/images/image 17.png'
 import project5 from '@/images/image 18.png'
 import { FaArrowRightLong } from "react-icons/fa6";
+import Link from 'next/link'
 
 const Project = () => {
   return (
@@ -19,7 +20,9 @@ const Project = () => {
                     <div className='h-[100%] w-[100%] bg-black absolute top-0 opacity-50'></div>
                     <div className='absolute top-[5%] md:top-14 left-[20%] z-0 text-white'>
                         <h1 className='text-lg sm:text-2xl md:text-5xl font-light sm:font-semibold'>Simple <br className='hidden sm:block'/> Project</h1>
+                        <Link href={'/projects/sample-project'}>
                         <button className='flex items-center text-sm md:text-lg sm:py-1 md:py-5'>VIEW MORE <FaArrowRightLong/></button>
+                        </Link>
                     </div>
                     </div>
                     <Image src={project2} alt=""/>
@@ -31,7 +34,9 @@ const Project = () => {
                 </div>
             </div>
                 <div className='flex justify-center sm:justify-end md:mr-20 mt-5 '>
+                <Link href={'/projects'}>
                 <button className='flex bg-black items-center gap-3 text-white px-5 py-4'>ALL PROJECTS <FaArrowRightLong/></button>
+                </Link>
                 </div>
     </div>
   )
