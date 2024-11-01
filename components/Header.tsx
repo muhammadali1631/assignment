@@ -17,18 +17,18 @@ const Header = () => {
     setAttr2(isOpen ? 'block': 'hidden')
   }
   return (
-    <header className='mb-10'>
+    <header className='mb-10 fade-in'>
     <div className='flex justify-between items-center py-5 px-6 sm:px-12'>
             <Link href={'/'}>
             <Image src={logo} alt='logo' height={0} width={0} className='w-[70px] object-contain'/>
             </Link>
         <nav>
             <ul className='hidden md:flex gap-7 '>
-                <Link href={"/"} className='border-y-[1px] border-black px-3 '> <li>MAIN</li> </Link>
-                <Link href={"/photo-gallery"} className='px-3'> <li>GALLERY</li> </Link>
-                <Link href={"/projects"} className='px-3'> <li>PROJECTS</li> </Link>
-                <Link href={"/certifications"} className='px-3'> <li>CERTIFICATIONS</li> </Link>
-                <Link href={"/contact"} className='px-3'> <li>CONTACT</li> </Link>
+                <Link href={"/"} className='hover:border-y-[1px] hover:border-black px-3 '> <li>MAIN</li> </Link>
+                <Link href={"/photo-gallery"} className='hover:border-y-[1px] hover:border-black px-3'> <li>GALLERY</li> </Link>
+                <Link href={"/projects"} className='hover:border-y-[1px] hover:border-black px-3'> <li>PROJECTS</li> </Link>
+                <Link href={"/certifications"} className='hover:border-y-[1px] hover:border-black px-3'> <li>CERTIFICATIONS</li> </Link>
+                <Link href={"/contact"} className='hover:border-y-[1px] hover:border-black px-3'> <li>CONTACT</li> </Link>
             </ul>
             <IoMenu onClick={openMenu} className={`${attr2} md:hidden text-3xl`}/>
             <RxCross2 onClick={openMenu} className={`${attr} text-3xl`}/>

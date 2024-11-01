@@ -14,12 +14,12 @@ const page = () => {
       <div className="flex flex-col  items-center gap-10 w-[100%]">
         <div className="h-[2px] bg-gray-400 w-[90%]"></div>
         <div className="flex flex-col items-center w-[90%] gap-5">
-        <div>
+        <div className="fade-in">
           <Image src={img1} alt="image" />
         </div>
         <div className="flex lg:flex-row flex-col w-[100%] items-center lg:justify-center gap-3">
-          <Image src={img2} alt="image2" />
-          <p className="w-[100%] lg:w-[700px]">
+          <Image src={img2} alt="image2" className="fade-in2" />
+          <p className="w-[100%] lg:w-[700px] fade-in2">
             Lorem Ipsum is simply dummy text of the printing and typesetting
             industry. Lorem Ipsum has been the industry&apos;s standard dummy text
             ever since the 1500s, when an unknown printer took a galley of type
@@ -47,7 +47,7 @@ const page = () => {
             containing Lorem Ipsum passages, and more recently with.
           </p>
         </div>
-        <div>
+        <div className="fade-in2">
             <Image src={img3} alt="image"/>
         </div>
         </div>

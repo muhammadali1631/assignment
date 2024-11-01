@@ -9,7 +9,7 @@ const Contact = () => {
         <div className='flex flex-col gap-7'>
 
             <h1 className='text-5xl text-[#BDBDBD]'>Contact Us</h1>
-            <div className='flex flex-col gap-3'>
+            <div className='flex flex-col gap-3 fade-in-left2'>
                 <input className='bg-gray-200 h-10 w-[80vw] lg:w-72 px-5' type="text" placeholder='Name' />
                 <input className='bg-gray-200 h-10 lg:w-72 px-5' type="text" placeholder='Phone Number' />
                 <input className='bg-gray-200 h-10 lg:w-72 px-5' type="text" placeholder='email' />
@@ -19,7 +19,7 @@ const Contact = () => {
             <button className='flex items-center bg-black w-40 text-white py-4 justify-center gap-3'>SEND EMAIL <FaArrowRightLong/></button>
         </div>
         <div>
-            <Image src={contactImg} alt='' className='w-[300px] sm:w-[450px] md:w-[600px] lg:w-[700px]'/>
+            <Image src={contactImg} alt='' className='w-[300px] sm:w-[450px] md:w-[600px] lg:w-[700px] fade-in-right2'/>
         </div>
     </div>
   )

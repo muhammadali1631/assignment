@@ -21,7 +21,7 @@ const page = () => {
         <div className='flex flex-wrap gap-5 lg:mx-14 justify-center py-6'>
             <div className='h-[2px] bg-gray-400 w-[90%]'></div>
             {images.map((items, idx)=>
-                <Image key={idx} src={items} alt="image"/>
+                <Image key={idx} src={items} alt="image" className='fade-in2'/>
             )}
         </div>
         <CountArrow/>

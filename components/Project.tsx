@@ -15,7 +15,7 @@ const Project = () => {
         
             <div className='grid gap-5 justify-around'>
                 <div className='flex gap-4 flex-wrap justify-center'>
-                    <div className='relative'>
+                    <div className='relative fade-in2'>
                     <Image src={project1} alt="" className=''/>
                     <div className='h-[100%] w-[100%] bg-black absolute top-0 opacity-50'></div>
                     <div className='absolute top-[5%] md:top-14 left-[20%] z-0 text-white'>
@@ -25,12 +25,12 @@ const Project = () => {
                         </Link>
                     </div>
                     </div>
-                    <Image src={project2} alt=""/>
+                    <Image src={project2} alt="" className='fade-in2'/>
                 </div>
                 <div className='flex gap-4 flex-wrap justify-center'>
-                    <Image src={project3} alt=""/>
-                    <Image src={project4} alt=""/>
-                    <Image src={project5} alt=""/>
+                    <Image src={project3} alt="" className='fade-in2'/>
+                    <Image src={project4} alt="" className='fade-in2'/>
+                    <Image src={project5} alt="" className='fade-in2'/>
                 </div>
             </div>
                 <div className='flex justify-center sm:justify-end md:mr-20 mt-5 '>
