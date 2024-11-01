@@ -17,7 +17,7 @@ const About = () => {
             </div>
             <Image src={img2} alt='' className='w-[150px] md:w-[270px] object-contain'/>
         </div>
-        <div className=' w-[500px] flex flex-col justify-center gap-10 px-5 fade-in-right2'>
+        <div className=' w-[500px] flex flex-col justify-center gap-10 px-5 fade-in2'>
             <h3 className='text-gray-500 text-5xl '>About</h3>
             <p className='text-xl'>Lorem Ipsum is simply dummy text of the printing and typesetting industry. Lorem Ipsum has been the industry&apos;s standard dummy text ever since the 1500s, when an unknown printer took a galley of type and scrambled it to make a type specimen book. It has survived not only five centuries, but also the leap into electronic typesetting, remaining essentially unchanged.</p>
             

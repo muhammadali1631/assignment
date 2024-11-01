@@ -19,7 +19,7 @@ const Contact = () => {
             <button className='flex items-center bg-black w-40 text-white py-4 justify-center gap-3'>SEND EMAIL <FaArrowRightLong/></button>
         </div>
         <div>
-            <Image src={contactImg} alt='' className='w-[300px] sm:w-[450px] md:w-[600px] lg:w-[700px] fade-in-right2'/>
+            <Image src={contactImg} alt='' className='w-[300px] sm:w-[450px] md:w-[600px] lg:w-[700px] fade-in2'/>
         </div>
     </div>
   )

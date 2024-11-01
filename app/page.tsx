@@ -6,7 +6,7 @@ import Project from '@/components/Project'
 import Contact from '@/components/Contact'
 const page = () => {
   return (
-    <div>
+    <div >
       {/* <BackGround/> */}
       <Main/>
       <About/>
