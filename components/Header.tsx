@@ -24,11 +24,11 @@ const Header = () => {
             </Link>
         <nav>
             <ul className='hidden md:flex gap-7 '>
-                <Link href={"/"} className='hover:border-y-[1px] hover:border-black px-3 '> <li>MAIN</li> </Link>
-                <Link href={"/photo-gallery"} className='hover:border-y-[1px] hover:border-black px-3'> <li>GALLERY</li> </Link>
-                <Link href={"/projects"} className='hover:border-y-[1px] hover:border-black px-3'> <li>PROJECTS</li> </Link>
-                <Link href={"/certifications"} className='hover:border-y-[1px] hover:border-black px-3'> <li>CERTIFICATIONS</li> </Link>
-                <Link href={"/contact"} className='hover:border-y-[1px] hover:border-black px-3'> <li>CONTACT</li> </Link>
+                <Link href={"/"} className='border-y-[1px] border-white hover:border-black px-3 '> <li>MAIN</li> </Link>
+                <Link href={"/photo-gallery"} className='border-y-[1px] border-white hover:border-black px-3'> <li>GALLERY</li> </Link>
+                <Link href={"/projects"} className='border-y-[1px] border-white hover:border-black px-3'> <li>PROJECTS</li> </Link>
+                <Link href={"/certifications"} className='border-y-[1px] border-white hover:border-black px-3'> <li>CERTIFICATIONS</li> </Link>
+                <Link href={"/contact"} className='border-y-[1px] border-white hover:border-black px-3'> <li>CONTACT</li> </Link>
             </ul>
             <IoMenu onClick={openMenu} className={`${attr2} md:hidden text-3xl`}/>
             <RxCross2 onClick={openMenu} className={`${attr} text-3xl`}/>
