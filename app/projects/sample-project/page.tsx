@@ -8,7 +8,7 @@ const page = () => {
   return (
     <div>
       <h1 className="pl-6 sm:pl-14 md:pl-28 lg:pl-40 text-2xl md:text-5xl mb-6 text-gray-400">
-        Our
+        Sample
         <br /> <span className="text-black font-semibold">Projects</span>{" "}
       </h1>
       <div className="flex flex-col  items-center gap-10 w-[100%]">
